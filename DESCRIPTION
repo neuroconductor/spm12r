@@ -1,32 +1,34 @@
 Package: spm12r
 Type: Package
-Title: Wrapper Functions for 'SPM' (Statistical Parametric Mapping) 
-    Version 12 from the 'Wellcome' Trust Centre for 'Neuroimaging'
+Title: Wrapper Functions for 'SPM' (Statistical Parametric Mapping)
+        Version 12 from the 'Wellcome' Trust Centre for 'Neuroimaging'
 Version: 2.8.1
 Date: 2019-01-01
-Authors@R: c(
-    person(given = "John",
-           family = "Muschelli",
-           role = c("cre", "aut"),
-           email = "muschellij2@gmail.com"))
-Description: Installs 'SPM12' to the R library directory and has 
-    associated functions for 'fMRI' and general imaging utilities, 
-    called through 'MATLAB'.
+Authors@R: c( person(given = "John", family = "Muschelli", role =
+        c("cre", "aut"), email = "muschellij2@gmail.com"))
+Description: Installs 'SPM12' to the R library directory and has
+        associated functions for 'fMRI' and general imaging utilities,
+        called through 'MATLAB'.
 License: GPL-2 | file LICENCE
-Imports:
-    R.utils,
-    neurobase,
-    utils,
-    matlabr (>= 1.5.2),
-    oro.nifti,
-    git2r
-Suggests: knitr,
+Imports: R.utils, neurobase, utils, matlabr (>= 1.5.2), oro.nifti,
+        git2r
+Suggests: 
+    knitr,
     rmarkdown,
     kirby21.t1 (>= 1.7),
     kirby21.fmri (>= 1.7),
     scales,
-    httr
+    httr,
+    covr,
+    testthat
 SystemRequirements: MATLAB
 Encoding: UTF-8
 RoxygenNote: 6.1.1
 VignetteBuilder: knitr
+Repository: Neuroconductor
+Remotes: 
+    neuroconductor/kirby21.t1@d9d2c5888aae676ae04f31146111014c589ea26f,
+    neuroconductor/oro.nifti@bd06b05d2a090c743e51d745a826e8b77af278f0,
+    neuroconductor/kirby21.fmri@e59273128069905f2da32e9d48864ec7e73c1ad7,
+    neuroconductor/neurobase@1d4b172915192d419b4defb2e56d84d7541c03cd
+biocViews: 
