@@ -16,3 +16,8 @@ vignettes/\.build\.timestamp$
 ^README\.Rmd$
 ^docs$
 ^cran-comments\.md$
+^DESCRIPTION\.bak$
+^\.github$
+^autoci\.yml$
+^autoci_pkgdown\.yml$
+^tic\.R$
